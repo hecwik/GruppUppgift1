@@ -107,17 +107,15 @@ namespace GroupAssignment1
         /// <returns>Number of bottles in myCellar</returns>
         private static int NrOfBottles(Wine[] myCellar)
         {
+            // int variable used as counter
             int count = 0;
 
             foreach (var item in myCellar)
             {
+                // if the year of the wine is NOT null, count it
                 if (item.Year != null)
                 {
                     count++;
-                }
-                else
-                {
-                    Console.WriteLine("Year was null");
                 }
             }
             return count;
